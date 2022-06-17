@@ -1,0 +1,238 @@
+												**Java**
+
+Print Function(sort cut : sout) : System.out.print("Hello Java"); or System.out.println(name.length());
+
+Data Type :  
+
+(i). Primitive
+
+	(i). byte - 1 : [-128 to 127]
+
+	(ii). short - 2
+
+	(iii). int - 4 : 1,2,3
+
+	(iv). long - 8
+	
+		Ex : long phone = 812806146666L;
+	
+	(v). float  - 4 : 3.14
+
+	(vi). double  - 8 
+
+	(vii). char - 2 : a,b,c,d
+
+	(viii). boolean - 1 : true/false
+	
+(ii). Non - Primitive 
+
+	(i).  String :	
+
+		(i). CharAt : The charAt() method returns the character at the specified index in a string.
+		
+			Ex. String myStr = "Hello";
+				char result = myStr.charAt(0);
+				System.out.println(result);
+
+		(ii). Replace : 
+		   
+		   Ex. String name = "Aman";
+			   String name2 = name.replace('a','b');
+			   
+		(iii). substring : 
+	
+		   Ex. String name = "Smit Chhatrola";
+			   System.out.print(name.substring(5,9));
+			   
+	(ii). Array : 
+	
+		int[] marks = new int[3];	
+		marks[0] = 95;
+		marks[1] = 98; 
+		marks[3] = 80;
+		
+		Ex. System.out.print(marks.length);
+		
+		OR : 
+		
+		1D : 
+		
+			int[] marks = {97,98,95};
+		
+		2D : 
+		
+			int[][] finalMarks = {{97,80,81},{82,92,69}};
+			System.out.println(finalMarks[1][2]); O/P : 92
+			
+		(i). Sort :  note => import java.util.Array;
+	
+			Array.sort(marks);
+	
+Casting : 
+
+	Widening Casting (automatically) - converting a smaller type to a larger type size
+	byte -> short -> char -> int -> long -> float -> double
+
+	Narrowing Casting (manually) - converting a larger type to a smaller size type
+	double -> float -> long -> int -> char -> short -> byte
+
+	(i). Narrowing Casting : 
+	
+		double myDouble = 9.78d;
+		
+		int myInt = (int) myDouble; // Manual casting: double to int
+
+		System.out.println(myDouble);   // Outputs 9.78
+		System.out.println(myInt);      // Outputs 9
+		
+		
+	(ii). Widening Casting : 
+	
+		int myInt = 9;
+		double myDouble = myInt; // Automatic casting: int to double
+
+		System.out.println(myInt);      // Outputs 9
+		System.out.println(myDouble);   // Outputs 9.0
+		}
+
+Constants : As the name suggests, a constant is an entity in programming that is immutable.
+
+	Ex. final float PI = 3.14F;
+
+Oprators : 
+
+	(i). Arithmetics : +, -, *, /, %, ++, --
+	
+	(ii). Assignment : =, +=, >>=, <<=
+	
+	(iii). Logical   : &&, ||, !
+	
+	(iv). Comparison : ==, !=, >, <, >=, <=
+
+Math Class : 
+
+	(i). Math.max() & min();
+	
+	(ii). Math.random();  //They print a random value
+		  
+		  or (int)(Math.random()*100); //They Print Int Random Value 
+		  
+Take A Input :  note => import java.util.Scanner
+
+	Scanner sc = new Scanner(system.in);
+	
+	String name = sc.next(); // input string from user, next function only take single world
+	String name = sc.nextLine(); //print full string sentence.
+	int age = sc.nextInt();
+	float age = sc.nextFloat(); // Byte, Long, Sort etc..
+	
+Conditional Statements : 
+	
+	(if - else): 
+	
+		if(condition){
+		 //write code here
+		}
+
+		else if(condition)
+		{
+		 //write code here
+		}
+		else {
+		 //write code here
+		}
+
+	(switch - case) : 
+	
+		switch(condition){
+		
+			case 1 : 	
+			 //code
+			break;
+			
+			case 2 : 
+			 //code
+			break;
+			
+			default : 
+			 //code 
+		}
+		
+	Diffrent Between : 
+	
+		-> if-else statement can evluate almost all the type of data such as int,float,char....
+		
+Loops : 
+
+		for(initialization ; condition ; incre/decre){
+			
+			//write code here
+		
+		}
+	
+		while(condition){
+			
+			//write code here
+			
+		}
+	
+	    do{
+		 
+		    //write code here
+		  
+		}while(condition)
+		
+Break & Continue : 
+
+		-> The break and continue statement are the jump statement that are used to skip some statement inside the loop.
+		
+Exception Handling(try-catch) : 
+
+		-> When executing java code, different errors can occur : coding errors made by programmer, errors due to wrong input, or unforeseeable things.
+		
+		try{
+			//code
+		}
+		catch(Exception e){
+			//code
+		}
+		finally{
+			//code 
+		}
+		
+Methods / Functions :  function name start with small latter.
+
+	Public static void Function_Name(){
+		//Write Code Here
+	}
+	
+	public static void Function_Name(pass parameter){
+		//Write Code here
+	}
+	
+	Constructor : 
+	
+		-> To construct something like object construct in java.
+		
+		-> Constructor name is same as class name.
+
+		-> Constructor cannot return anything.
+		
+		-> Constructor can call only one time can not call again and again.
+		
+		Copy Constructor : 
+		
+OOPs : 
+
+Key Word : 
+
+	this : 
+	
+	new : to allocate memory for object.
+	
+	
+Classes & Objects : 
+
+	-> class name always start with capital latter.
+	
+	-> 
